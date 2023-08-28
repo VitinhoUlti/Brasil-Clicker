@@ -4,4 +4,7 @@ function brasil(){
     let n = pontos+1
     pontos = n
     real.textContent = pontos
+    if(pontos>=100){
+    window.alert("kkkkkk troxão, clicou 100 vezes sem nem ter oque comprar")
+}
 }
