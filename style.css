@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header nav nav"
+    "cookie opcoes compras"
+    'footer footer footer'
+    ;
+    grid-template-rows: 
+    10% 80% 12%
+    ;
+    grid-template-columns: 
+    35% 30% 35%
+    ;
+}
+header{
+    background-color: darkgreen;
+    color: white;
+    grid-area: header;
+    font-size: 2.5em;
+}
+nav{
+    background-color: darkgreen;
+    color: white;
+    grid-area: nav;
+    text-align: center;
+}
+a{
+    background-color: rgb(1, 206, 1);
+    color: white;
+    border: 3px solid rgb(1, 80, 1);
+    font-size: 1.5em;
+    margin: 1vw;
+}
+footer{
+    background-color: darkgreen;
+    color: white;
+    grid-area: footer;
+}
+section{
+    border: 2px solid darkgreen;
+}
+#cookie{
+    grid-area: cookie;
+    background-color: yellow;
+}
+#opcoes{
+    grid-area: opcoes;
+    background-color: yellow;
+}
+#compras{
+    grid-area: compras;
+    background-color: yellow;
+}
+#imagem{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+@media screen and (min-width:320px) and (max-width:479px){
+    header{
+        font-size: 1.5em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:100px) and (max-width:320px){
+    header{
+        font-size: 1.3em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
