@@ -51,6 +51,9 @@ footer{
 section{
     border: 2px solid darkgreen;
 }
+p{
+    margin-left: 1vw;
+}
 #cookie{
     grid-area: cookie;
     background-color: yellow;
@@ -69,6 +72,32 @@ section{
     border-radius: 15px;
     margin-top: 1vh;
     margin-left: 1vw;
+
+}
+#imagem:hover{
+    animation: meme 0.1s;
+    animation-fill-mode: forwards;
+}
+#upgrades{
+    margin: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#double{
+    padding: 5vw;
+    background-image: url(imagens/download.png);
+    background-size: cover;
+    background-position: center;
+}
+@keyframes meme{
+    from{
+        width: 30vw;
+    }
+    to{
+        width: 25vw;
+        margin-left: 3vw;
+    }
 }
 @media screen and (min-width:320px) and (max-width:479px){
     header{
