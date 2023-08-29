@@ -90,6 +90,11 @@ p{
     background-size: cover;
     background-position: center;
 }
+#op{
+    background-color: rgb(50, 50, 211);
+    color: white;
+    text-align: center;
+}
 @keyframes meme{
     from{
         width: 30vw;
