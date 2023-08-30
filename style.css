@@ -92,7 +92,18 @@ p{
     background-position: center;
 }
 #clicker{
-    background-image: url(imagens/download.png);
+    background-image: url(imagens/click\ preço.jpeg);
+    background-position: left;
+}
+#juliet{
+    background-image: url(imagens/juliet\ preço.jpeg);
+}
+#coxinha{
+    background-image: url(imagens/coxinha\ preço.jpeg);
+}
+#conto{
+    background-image: url(imagens/200\ conto.webp);
+    background-position: left;
 }
 #op{
     background-color: rgb(50, 50, 211);
