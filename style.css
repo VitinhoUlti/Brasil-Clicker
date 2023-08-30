@@ -82,13 +82,17 @@ p{
     margin: 1vw;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
 }
-#double{
+.double{
     padding: 5vw;
-    background-image: url(imagens/download.png);
+    margin-left: 1vw;
     background-size: cover;
     background-position: center;
+}
+#clicker{
+    background-image: url(imagens/download.png);
 }
 #op{
     background-color: rgb(50, 50, 211);
