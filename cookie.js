@@ -11,6 +11,7 @@ let n = pontos+1;
 let b = 0;
 let res = 0;
 let clickv = 0;
+let precoc = 10
 
 function dou(){
     if(pontos<10){
@@ -61,16 +62,25 @@ function cont(){
 }
 
 function cip(){
-    if(pontos<10){
-        window.alert("tu é pobre kkkk, precisa de 10 conto pra comprar")
+    if(pontos<precoc){
+        window.alert(`tu é pobre kkkk, precisa de ${precoc} conto pra comprar`)
     }
     else{
         clickv++
-        pontos = pontos-10;
+        pontos = pontos-precoc;
         real.textContent = pontos;
         cp.textContent = clickv;
+        autoclick();
+        precoc = precoc*2
     }
 }
+function autoclick() {
+    if(clickv>=1){
+        pontos = pontos+clickv;
+        real.textContent = pontos;
+    }
+}
+setInterval(autoclick, 1000)
 
 function renas(){
     if(pontos<=2000){
