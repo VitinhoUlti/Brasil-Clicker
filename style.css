@@ -18,7 +18,7 @@ body{
     'footer footer footer'
     ;
     grid-template-rows: 
-    10% 80% 12%
+    10% 80% 10%
     ;
     grid-template-columns: 
     35% 30% 35%
@@ -85,11 +85,33 @@ p{
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
+#auto{
+    display: grid;
+    grid-template-areas: 
+    "cp clp"
+    ;
+}
 .double{
     padding: 5vw;
     margin-left: 1vw;
     background-size: cover;
     background-position: center;
+}
+.preco{
+    padding: 5vw;
+    margin-left: 1vw;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+#clp{
+    grid-area: clp;
+    padding: 0%;
+}
+#clickerp{
+    grid-area: cp;
+    background-image: url(imagens/click\ preço.jpeg);
+    background-position: left;
 }
 #clicker{
     background-image: url(imagens/click\ preço.jpeg);
@@ -105,10 +127,17 @@ p{
     background-image: url(imagens/200\ conto.webp);
     background-position: left;
 }
-#op{
+#op, #renascer{
     background-color: rgb(50, 50, 211);
     color: white;
     text-align: center;
+    padding: 1vw;
+}
+#renascer{
+    margin: 1vh;
+}
+#imagem:hover, #renascer:hover, .double:hover{
+    cursor: pointer;
 }
 @keyframes meme{
     from{

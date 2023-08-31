@@ -1,106 +1,96 @@
-let real = window.document.getElementById("real")
-let imagem = window.document.getElementById("imagem")
-let pontos = 0
-let n = pontos+1
-let b = 0
+let real = window.document.getElementById("real");
+let imagem = window.document.getElementById("imagem");
+let click = document.getElementById("clicker");
+let juliet = document.getElementById("juliet");
+let coxinha = document.getElementById("coxinha");
+let conto = document.getElementById("conto");
+let cp = document.getElementById("cp")
+
+let pontos = 0;
+let n = pontos+1;
+let b = 0;
+let res = 0;
+let clickv = 0;
 
 function dou(){
-    let click = document.getElementById("clicker")
     if(pontos<10){
         window.alert("tu é pobre kkkk, precisa de 10 conto pra comprar")
     }
     else{
-    n = pontos+1
-    pontos = n
-    b = b+0.5
-    pontos = pontos-11
+    b = b+0.5;
+    pontos = pontos-10;
     real.textContent = pontos;
     click.style.display = 'none';
     }
 }
 
 function juli(){
-    let juliet = document.getElementById("juliet")
     if(pontos<20){
         window.alert("tu é pobre kkkk, precisa de 20 conto pra comprar")
     }
     else{
-    n = pontos+1
-    pontos = n
-    b = b+1
-    pontos = pontos-21
+    b = b+1;
+    pontos = pontos-20;
     real.textContent = pontos;
     juliet.style.display = 'none';
     }
 }
 
 function coxi(){
-    let coxinha = document.getElementById("coxinha")
     if(pontos<20){
         window.alert("tu é pobre kkkk, precisa de 30 conto pra comprar")
     }
     else{
-    n = pontos+1
-    pontos = n
-    b = b+2
-    pontos = pontos-31
+    b = b+2;
+    pontos = pontos-30;
     real.textContent = pontos;
     coxinha.style.display = 'none';
     }
 }
 
-function conto(){
-    let conto = document.getElementById("conto")
+function cont(){
     if(pontos<20){
         window.alert("tu é pobre kkkk, precisa de 200 conto pra comprar")
     }
     else{
-    n = pontos+1
-    pontos = n
-    b = b+200
-    pontos = pontos-201
+    b = b+200;
+    pontos = pontos-200;
     real.textContent = pontos;
     conto.style.display = 'none';
     }
 }
 
+function cip(){
+    if(pontos<10){
+        window.alert("tu é pobre kkkk, precisa de 10 conto pra comprar")
+    }
+    else{
+        clickv++
+        pontos = pontos-10;
+        real.textContent = pontos;
+        cp.textContent = clickv;
+    }
+}
+
+function renas(){
+    if(pontos<=2000){
+        window.alert("tu é pobre kkkk, precisa de 2000 conto pra comprar")
+    }
+    else{
+        pontos=0;
+        res = res+1;
+        b = res;
+        real.textContent = pontos;
+        click.style.display = 'block';
+        juliet.style.display = 'block';
+        coxinha.style.display = 'block';
+        conto.style.display = 'block';
+    }
+}
+
 function brasil(){
-    let real = window.document.getElementById("real")
-    if(b<=0){
-       let n = pontos+1
-       pontos = n 
-    }
-    else if(b==0.5){
-        n = pontos+1.5
-        pontos = n
-    }
-    else if(b==1){
-        n = pontos+2
-        pontos = n
-    }
-    else if(b==1.5){
-        n = pontos+2.5
-        pontos = n
-    }
-    else if(b==2){
-        n = pontos+3
-        pontos = n
-    }
-    else if(b==2.5){
-        n = pontos+3.5
-        pontos = n
-    }
-    else if(b==3){
-        n = pontos+4
-        pontos = n
-    }
-    else if(b==3.5){
-        n = pontos+4.5
-        pontos = n
-    }
-    else if(b>=200){
-        n = pontos-200
-        pontos = n
-    }
-    real.textContent = pontos
+    let pv = b+1;
+    n = pontos+pv;
+    pontos = n;
+    real.textContent = pontos;
 }
