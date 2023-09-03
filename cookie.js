@@ -38,7 +38,7 @@ function juli(){
 }
 
 function coxi(){
-    if(pontos<20){
+    if(pontos<30){
         window.alert("tu é pobre kkkk, precisa de 30 conto pra comprar")
     }
     else{
@@ -50,7 +50,7 @@ function coxi(){
 }
 
 function cont(){
-    if(pontos<20){
+    if(pontos<200){
         window.alert("tu é pobre kkkk, precisa de 200 conto pra comprar")
     }
     else{
